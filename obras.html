@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora S.R.L. | Obras</title>
+    <!-- icono de la pestaña -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Tipografias de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark barra-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="logo-c">C</span>
+                <span class="logo-texto">CONSTRUCTORA S.R.L.</span>
+            </a>
+            <!-- menu hamburguesa (se ve en celular) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="obras.html">Obras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-amarillo btn-sm px-3" href="contacto.html">Solicitar presupuesto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TITULO DE LA PAGINA -->
+    <header class="hero hero-chico hero-fija hero-obras">
+        <div class="container position-relative">
+            <p class="subtitulo text-white-50">PORTFOLIO</p>
+            <h1>Nuestras obras</h1>
+            <p class="hero-texto">Algunos de los proyectos que realizamos en San Juan y la región de Cuyo.</p>
+        </div>
+    </header>
+
+    <!-- CARRUSEL DE OBRAS DESTACADAS -->
+    <section class="seccion fondo-celeste">
+        <div class="container">
+            <p class="subtitulo text-center">DESTACADAS</p>
+            <h2 class="titulo text-center mb-5">Proyectos recientes</h2>
+
+            <div id="carruselObras" class="carousel slide carrusel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselObras" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carruselObras" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carruselObras" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center g-0">
+                            <div class="col-md-5 text-center">
+                                <img src="img/edificio-mirador.jpg" class="img-carrusel" alt="Complejo residencial Mirador del Sol">
+                            </div>
+                            <div class="col-md-7 texto-carrusel">
+                                <span class="etiqueta">Vivienda</span>
+                                <h3>Complejo residencial Mirador del Sol</h3>
+                                <p>Dos torres de departamentos con espacios verdes, cocheras y locales comerciales en planta baja.</p>
+                                <a href="#mirador" class="link-amarillo">Ver ficha de la obra →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center g-0">
+                            <div class="col-md-5 text-center">
+                                <img src="img/planta-industrial.jpg" class="img-carrusel" alt="Planta industrial Zona Norte">
+                            </div>
+                            <div class="col-md-7 texto-carrusel">
+                                <span class="etiqueta">Industria</span>
+                                <h3>Planta industrial Zona Norte</h3>
+                                <p>Nave con estructura metálica, oficinas administrativas e instalación eléctrica de media tensión.</p>
+                                <a href="#planta" class="link-amarillo">Ver ficha de la obra →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center g-0">
+                            <div class="col-md-5 text-center">
+                                <img src="img/ruta40.jpg" class="img-carrusel" alt="Pavimentación Ruta Provincial 40">
+                            </div>
+                            <div class="col-md-7 texto-carrusel">
+                                <span class="etiqueta">Infraestructura</span>
+                                <h3>Pavimentación Ruta Provincial 40</h3>
+                                <p>Repavimentación de calzada con banquinas, señalización horizontal y obras de desagüe.</p>
+                                <a href="#ruta" class="link-amarillo">Ver ficha de la obra →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselObras" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselObras" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CADA OBRA CON SU FICHA -->
+    <section id="mirador" class="seccion bg-white">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <img src="img/edificio-mirador.jpg" class="img-servicio" alt="Complejo residencial Mirador del Sol">
+                </div>
+                <div class="col-lg-6">
+                    <span class="etiqueta">Vivienda</span>
+                    <h2 class="titulo mt-3">Complejo residencial Mirador del Sol</h2>
+                    <p class="texto-oscuro">Dos torres de departamentos de cinco pisos con espacios verdes, cocheras subterráneas y locales comerciales en planta baja. La estructura de hormigón armado se calculó para zona sísmica 4.</p>
+                    <p class="texto-gris">Estuvimos a cargo del proyecto, la dirección técnica y la ejecución completa, desde las fundaciones antisísmicas hasta las terminaciones.</p>
+                    <div class="ficha">
+                        <h3>Ficha técnica</h3>
+                        <ul class="list-unstyled row mb-0">
+                            <li class="col-sm-6"><i class="bi bi-geo-alt"></i> Rivadavia, San Juan</li>
+                            <li class="col-sm-6"><i class="bi bi-calendar3"></i> Finalizada en 2024</li>
+                            <li class="col-sm-6"><i class="bi bi-rulers"></i> 12.400 m² cubiertos</li>
+                            <li class="col-sm-6"><i class="bi bi-people"></i> 96 unidades de vivienda</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planta" class="seccion fondo-celeste">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="img/planta-industrial.jpg" class="img-servicio" alt="Planta industrial Zona Norte">
+                </div>
+                <div class="col-lg-6">
+                    <span class="etiqueta">Industria</span>
+                    <h2 class="titulo mt-3">Planta industrial Zona Norte</h2>
+                    <p class="texto-oscuro">Nave con estructura metálica de 40 m de luz libre, oficinas administrativas en dos niveles y una subestación transformadora de media tensión. Sobre el techo se colocaron 120 paneles solares.</p>
+                    <p class="texto-gris">Obra civil, estructura metálica e instalación eléctrica industrial, entregada en el plazo acordado con el cliente.</p>
+                    <div class="ficha">
+                        <h3>Ficha técnica</h3>
+                        <ul class="list-unstyled row mb-0">
+                            <li class="col-sm-6"><i class="bi bi-geo-alt"></i> Chimbas, San Juan</li>
+                            <li class="col-sm-6"><i class="bi bi-calendar3"></i> Finalizada en 2023</li>
+                            <li class="col-sm-6"><i class="bi bi-rulers"></i> 8.000 m² de nave</li>
+                            <li class="col-sm-6"><i class="bi bi-lightning"></i> Subestación de 13,2 kV</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ruta" class="seccion bg-white">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <img src="img/ruta40.jpg" class="img-servicio" alt="Pavimentación Ruta Provincial 40">
+                </div>
+                <div class="col-lg-6">
+                    <span class="etiqueta">Infraestructura</span>
+                    <h2 class="titulo mt-3">Pavimentación Ruta Provincial 40</h2>
+                    <p class="texto-oscuro">Repavimentación de 18 km de calzada con banquinas enripiadas, alcantarillas de hormigón para las crecidas y señalización horizontal. Toda la obra se hizo con equipos de la empresa.</p>
+                    <p class="texto-gris">Trabajo realizado por licitación pública provincial, con movimiento de suelos, carpeta asfáltica y señalización.</p>
+                    <div class="ficha">
+                        <h3>Ficha técnica</h3>
+                        <ul class="list-unstyled row mb-0">
+                            <li class="col-sm-6"><i class="bi bi-geo-alt"></i> Calingasta, San Juan</li>
+                            <li class="col-sm-6"><i class="bi bi-calendar3"></i> Finalizada en 2025</li>
+                            <li class="col-sm-6"><i class="bi bi-signpost-split"></i> 18 km de calzada</li>
+                            <li class="col-sm-6"><i class="bi bi-truck"></i> Maquinaria propia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBRAS EN EJECUCION -->
+    <section class="seccion fondo-celeste">
+        <div class="container">
+            <p class="subtitulo text-center">EN MARCHA</p>
+            <h2 class="titulo text-center mb-5">Obras en ejecución</h2>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card tarjeta-obra h-100">
+                        <img src="img/obreros-encofrado.jpg" class="card-img-top" alt="Obreros trabajando sobre el encofrado de una losa">
+                        <div class="card-body">
+                            <span class="etiqueta">Avance 65%</span>
+                            <h3 class="mt-3">Torres Parque Rawson</h3>
+                            <p><i class="bi bi-geo-alt"></i> Rawson, San Juan</p>
+                            <div class="progress mb-2">
+                                <div class="progress-bar barra-avance" style="width: 65%"></div>
+                            </div>
+                            <p class="texto-gris mb-0">Estructura de hormigón terminada en las dos primeras torres. Entrega prevista: diciembre de 2027.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card tarjeta-obra h-100">
+                        <img src="img/hero-obras.jpg" class="card-img-top" alt="Operario cortando madera en la obra">
+                        <div class="card-body">
+                            <span class="etiqueta">Avance 30%</span>
+                            <h3 class="mt-3">Centro logístico Pocito</h3>
+                            <p><i class="bi bi-geo-alt"></i> Pocito, San Juan</p>
+                            <div class="progress mb-2">
+                                <div class="progress-bar barra-avance" style="width: 30%"></div>
+                            </div>
+                            <p class="texto-gris mb-0">Montaje de la estructura metálica de la nave principal. Entrega prevista: agosto de 2027.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presupuesto -->
+    <section class="banda-cta">
+        <div class="container text-center">
+            <h2>¿Tiene un proyecto en mente?</h2>
+            <p>Contáctenos y le enviamos un presupuesto sin cargo.</p>
+            <a href="contacto.html" class="btn btn-amarillo">Solicitar presupuesto</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="logo-c logo-chico">C</span>
+                        <span class="logo-texto">CONSTRUCTORA S.R.L.</span>
+                    </div>
+                    <p>Empresa constructora con más de 40 años de experiencia en San Juan y la región de Cuyo.</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <h4>Navegación</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="obras.html">Obras</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mb-4">
+                    <h4>Contacto</h4>
+                    <ul class="list-unstyled">
+                        <li>Av. Libertador San Martín 1234</li>
+                        <li>San Juan, Argentina</li>
+                        <li>(264) 421-0000</li>
+                        <li>info@constructora.com.ar</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4>Redes sociales</h4>
+                    <a href="#" class="red"><span class="icono-red"><i class="bi bi-instagram"></i></span> constructora_srl_ig</a>
+                    <a href="#" class="red"><span class="icono-red"><i class="bi bi-linkedin"></i></span> Constructora S.R.L.</a>
+                    <a href="#" class="red"><span class="icono-red"><i class="bi bi-facebook"></i></span> constructora_srl</a>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center copy">© 2026 Constructora S.R.L. — Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

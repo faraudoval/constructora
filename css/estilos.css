@@ -1,0 +1,840 @@
+/* =========================================
+   Estilos - Constructora S.R.L.
+   Diseño Web I - Practico Integrador
+   Colores sacados del prototipo de Figma:
+   azul oscuro  #1B2A4A
+   azul medio   #2C4066
+   amarillo     #E8A838
+   celeste      #BFD0E4
+   gris texto   #6B7280
+   amarillo osc #8A5A00 (para links sobre fondo blanco)
+   ========================================= */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #2C2C2C;
+}
+
+h1, h2, h3, h4, .btn, .logo-texto {
+    font-family: 'Inter', sans-serif;
+}
+
+/* ---------- NAVBAR ---------- */
+.barra-nav {
+    background-color: #1B2A4A;
+    padding: 18px 0;
+}
+
+.logo-c {
+    background-color: #E8A838;
+    color: #1B2A4A;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.logo-chico {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+}
+
+.logo-texto {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.barra-nav .nav-link {
+    color: #B0B8C8;
+    margin: 0 6px;
+}
+
+.barra-nav .nav-link:hover,
+.barra-nav .nav-link.active {
+    color: #E8A838;
+}
+
+/* ---------- BOTONES ---------- */
+.btn-amarillo {
+    background-color: #E8A838;
+    color: #1B2A4A;
+    font-weight: 700;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 4px;
+}
+
+.btn-amarillo.btn-sm {
+    padding: 10px 16px;
+    font-size: 13px;
+}
+
+.btn-amarillo:hover {
+    background-color: #d4952a;
+    color: #1B2A4A;
+}
+
+.btn-hero {
+    padding: 13px 28px;
+    border-radius: 4px;
+}
+
+.btn-borde {
+    border: 1.5px solid #1B2A4A;
+    color: #1B2A4A;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+.btn-borde:hover {
+    background-color: #1B2A4A;
+    color: #fff;
+}
+
+.link-amarillo {
+    color: #8A5A00; /* el amarillo claro no se leia sobre blanco */
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.link-amarillo:hover {
+    color: #1B2A4A;
+    text-decoration: underline;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+    background: linear-gradient(135deg, #2C4066 0%, #3B5278 50%, #1B2A4A 100%);
+    color: #fff;
+    padding: 130px 0 110px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-texto {
+    color: #D0D8E8;
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+/* foto de fondo fija con capa azul encima para que se lea el texto */
+.hero-fija {
+    background: linear-gradient(90deg, rgba(27, 42, 74, 0.92) 0%, rgba(27, 42, 74, 0.70) 50%, rgba(27, 42, 74, 0.35) 100%),
+                url(../img/hero.jpg) center / cover no-repeat fixed;
+}
+
+/* foto pagina contacto */
+.hero-contacto {
+    background-image: linear-gradient(90deg, rgba(27, 42, 74, 0.92) 0%, rgba(27, 42, 74, 0.70) 50%, rgba(27, 42, 74, 0.35) 100%),
+                      url(../img/nosotros.jpg);
+    background-attachment: scroll;
+    background-position: center;
+}
+
+/* foto pagina obras */
+.hero-obras {
+    background-image: linear-gradient(90deg, rgba(27, 42, 74, 0.92) 0%, rgba(27, 42, 74, 0.70) 50%, rgba(27, 42, 74, 0.35) 100%),
+                      url(../img/hero-obras.jpg);
+    background-attachment: scroll;
+    background-position: center 15%;
+}
+
+/* rectangulos transparentes del fondo */
+.deco {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.06);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.deco1 { top: 0; right: 0; width: 37.5%; height: 220px; }
+.deco2 { top: 0; right: 0; width: 30.5%; height: 165px; }
+.deco3 { top: 0; right: 0; width: 23.6%; height: 110px; background-color: rgba(0,0,0,0.04); }
+.deco4 { bottom: 0; left: 0; width: 28%; height: 125px; background-color: rgba(0,0,0,0.04); }
+
+/* con la foto de fondo no hacen falta los rectangulos */
+.hero-fija .deco {
+    display: none;
+}
+
+/* hero de las otras paginas (mas bajo) */
+.hero-chico {
+    padding: 80px 0 70px 0;
+}
+
+/* ---------- NUMEROS ---------- */
+.numeros {
+    background-color: #1B2A4A;
+    padding: 25px 0;
+}
+
+.numero-item {
+    border-left: 1px solid #2C4066;
+    padding: 10px 0;
+}
+
+.numero-item:first-child {
+    border-left: none;
+}
+
+.numeros h2 {
+    color: #E8A838;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.numeros p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ---------- SECCIONES EN GENERAL ---------- */
+.seccion {
+    padding: 80px 0;
+}
+
+.fondo-celeste {
+    background-color: #BFD0E4;
+}
+
+.subtitulo {
+    font-size: 11px;
+    color: #6B7280;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.fondo-celeste .subtitulo {
+    color: #000;
+    font-size: 13px;
+}
+
+.titulo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1B2A4A;
+    margin-bottom: 20px;
+}
+
+.texto-oscuro {
+    color: #2C2C2C;
+}
+
+.texto-gris {
+    color: #6B7280;
+    margin-bottom: 25px;
+}
+
+/* ---------- SERVICIOS ---------- */
+/* padding chico a los costados para que el texto justificado tenga mas ancho */
+.tarjeta-servicio {
+    border: 1px solid #000;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px 4px;
+}
+
+.icono {
+    background-color: #FBEBCB; /* amarillo clarito, con el azul transparente el icono casi no se veia */
+    color: #1B2A4A;
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
+.tarjeta-servicio h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1B2A4A;
+    margin-bottom: 12px;
+}
+
+.tarjeta-servicio p {
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 25px;
+}
+
+/* ---------- OBRAS ---------- */
+.tarjeta-obra {
+    border: 1px solid #E8E8E0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tarjeta-obra .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.tarjeta-obra h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1B2A4A;
+}
+
+.tarjeta-obra p {
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+/* ---------- CONTACTO ---------- */
+.formulario {
+    background-color: #fff;
+    border: 1px solid #E8E8E0;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.formulario .form-label {
+    font-size: 13px;
+    color: #2C2C2C;
+    margin-bottom: 4px;
+}
+
+.formulario .form-control {
+    border: 1px solid #D0D0D0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.formulario .form-control::placeholder {
+    color: #BBBBBB;
+}
+
+.datos-contacto {
+    background-color: #1B2A4A;
+    border-radius: 8px;
+    padding: 30px 50px;
+    color: #fff;
+}
+
+.datos-contacto h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.dato-titulo {
+    color: #8899BB;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.dato {
+    margin-bottom: 20px;
+}
+
+.dato span {
+    color: #D0D8E8;
+}
+
+/* ---------- PAGINA OBRAS: CARRUSEL ---------- */
+.carrusel {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px 70px 60px 70px;
+}
+
+.img-carrusel {
+    width: 100%;
+    max-width: 340px;
+    border-radius: 12px;
+}
+
+.texto-carrusel {
+    padding: 20px 30px;
+}
+
+.texto-carrusel h3 {
+    color: #1B2A4A;
+    font-weight: 700;
+    font-size: 26px;
+    margin: 12px 0;
+}
+
+.texto-carrusel p {
+    color: #6B7280;
+    font-size: 16px;
+}
+
+.etiqueta {
+    background-color: #E8A838;
+    color: #1B2A4A;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+/* las flechas e indicadores en azul porque el fondo es blanco */
+.carrusel .carousel-control-prev-icon,
+.carrusel .carousel-control-next-icon {
+    background-color: #1B2A4A;
+    border-radius: 50%;
+    background-size: 55%;
+    width: 40px;
+    height: 40px;
+}
+
+.carrusel .carousel-control-prev,
+.carrusel .carousel-control-next {
+    width: 60px;
+}
+
+.carrusel .carousel-indicators {
+    margin-bottom: 15px;
+}
+
+.carrusel .carousel-indicators button {
+    background-color: #1B2A4A;
+}
+
+/* fichas */
+.ficha {
+    background-color: #fff;
+    border: 1px solid #D6DEE9;
+    border-radius: 8px;
+    padding: 18px 20px;
+}
+
+.ficha .icono {
+    margin: 0 0 15px 0;
+    width: 56px;
+    height: 56px;
+    font-size: 28px;
+}
+
+.ficha h3 {
+    color: #1B2A4A;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.ficha li {
+    padding: 4px 0;
+    font-size: 15px;
+}
+
+.ficha li i {
+    color: #E8A838;
+    margin-right: 6px;
+}
+
+.ficha p {
+    color: #6B7280;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* banda azul antes del footer */
+.banda-cta {
+    background-color: #2C4066;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.banda-cta h2 {
+    font-weight: 700;
+}
+
+.banda-cta p {
+    color: #D0D8E8;
+    margin-bottom: 25px;
+}
+
+/* ---------- FOOTER ---------- */
+.pie {
+    background-color: #1B2A4A;
+    color: #8899BB;
+    padding: 50px 0 20px 0;
+}
+
+.pie h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.pie li {
+    margin-bottom: 6px;
+}
+
+.pie a {
+    color: #8899BB;
+    text-decoration: none;
+}
+
+.pie a:hover {
+    color: #E8A838;
+}
+
+.red {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.icono-red {
+    background-color: #2C4066;
+    color: #fff;
+    width: 40px;
+    height: 34px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.pie hr {
+    border-color: #2C4066;
+    opacity: 1;
+}
+
+.copy {
+    color: #8899BB;
+    margin: 0;
+}
+
+/* ---------- TEXTOS JUSTIFICADOS ---------- */
+/* los titulos quedan como en el figma, solo se justifican los parrafos.
+   hyphens corta las palabras con guion para que no queden huecos */
+#nosotros p.texto-oscuro,
+#nosotros p.texto-gris,
+.tarjeta-servicio p,
+.texto-carrusel p,
+.ficha p,
+.pie .col-lg-4 p {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+}
+
+/* ---------- HOVER EN TARJETAS ---------- */
+/* la tarjeta sube un poco y el icono se pinta de amarillo */
+.tarjeta-servicio,
+.tarjeta-obra {
+    transition: 0.3s;
+}
+
+.tarjeta-servicio:hover,
+.tarjeta-obra:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-servicio:hover .icono {
+    background-color: #E8A838;
+}
+
+/* imagen de nosotros con bordes redondeados */
+.img-redonda {
+    border-radius: 12px;
+}
+
+/* ---------- TESTIMONIOS ---------- */
+.testimonios {
+    background-color: #F4F7FB;
+}
+
+.comillas {
+    font-size: 50px;
+    color: #E8A838;
+}
+
+.cita {
+    font-size: 19px;
+    max-width: 750px;
+    margin: 0 auto 20px auto;
+}
+
+.cliente {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #1B2A4A;
+    margin: 0;
+}
+
+.empresa {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+/* ---------- PAGINA SERVICIOS ---------- */
+.img-servicio {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* el icono va a la izquierda y no centrado */
+.icono-izq {
+    margin: 0 0 18px 0;
+    width: 56px;
+    height: 56px;
+    font-size: 28px;
+}
+
+.lista-check li {
+    padding: 5px 0;
+}
+
+.lista-check i {
+    color: #8A5A00;
+    margin-right: 8px;
+}
+
+/* seccion azul de los pasos */
+.fondo-azul {
+    background-color: #1B2A4A;
+}
+
+.paso {
+    background-color: #2C4066;
+    color: #D0D8E8;
+    border-radius: 8px;
+    padding: 35px 15px 20px 15px;
+    height: 100%;
+    position: relative;
+}
+
+/* circulo amarillo con el numero arriba del recuadro */
+.paso-num {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    margin-left: -17px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #E8A838;
+    color: #1B2A4A;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.paso i {
+    font-size: 34px;
+    color: #E8A838;
+}
+
+.paso h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.paso p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* tarjetas de maquinaria */
+.maquina ul {
+    font-size: 14px;
+    color: #2C2C2C;
+    margin: 0;
+}
+
+.maquina li {
+    padding: 4px 0;
+    border-top: 1px solid #E8E8E0;
+}
+
+/* ---------- PAGINA OBRAS ---------- */
+.ficha li {
+    padding: 4px 0;
+    font-size: 14px;
+}
+
+.barra-avance {
+    background-color: #E8A838;
+}
+
+/* ---------- PAGINA CONTACTO ---------- */
+.form-select {
+    font-size: 14px;
+}
+
+.datos-contacto i {
+    color: #E8A838;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 12px;
+}
+
+/* preguntas frecuentes */
+.acordeon .accordion-button {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1B2A4A;
+}
+
+.acordeon .accordion-button:not(.collapsed) {
+    background-color: #E8A838;
+    color: #1B2A4A;
+}
+
+/* modal de consulta enviada */
+.icono-ok {
+    font-size: 56px;
+    color: #2E8B57;
+}
+
+/* ---------- MENU EN CELULAR ---------- */
+.navbar-toggler {
+    border-color: #E8A838;
+}
+
+/* ---------- CELULAR ---------- */
+@media (max-width: 768px) {
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-texto {
+        font-size: 18px;
+    }
+
+    /* en celular el fondo fijo anda mal, lo dejo normal */
+    .hero-fija {
+        background-attachment: scroll;
+    }
+
+    .numero-item {
+        border-left: none;
+        margin-bottom: 10px;
+    }
+
+    .numeros h2 {
+        font-size: 28px;
+    }
+
+    /* en celular los rectangulos tapan el texto */
+    .deco {
+        display: none;
+    }
+
+    .titulo {
+        font-size: 26px;
+    }
+
+    .carrusel {
+        padding: 25px 20px 50px 20px;
+    }
+
+    .carrusel .carousel-control-prev,
+    .carrusel .carousel-control-next {
+        display: none;
+    }
+
+    .datos-contacto {
+        padding: 30px;
+    }
+
+    .img-servicio {
+        height: 240px;
+    }
+
+    .tarjeta-obra .card-img-top {
+        height: 220px;
+    }
+
+    .cita {
+        font-size: 16px;
+    }
+
+    .mapa iframe {
+        height: 300px;
+    }
+}
+
+/* menu desplegado en celular y tablet */
+@media (max-width: 991px) {
+    .barra-nav .nav-link {
+        border-bottom: 1px solid #2C4066;
+        margin: 0;
+    }
+
+    .barra-nav .btn-amarillo {
+        margin-top: 12px;
+    }
+}
+
+/* ---------- PAGINA NOSOTROS ---------- */
+/* foto del titulo */
+.hero-nosotros {
+    background-image: linear-gradient(90deg, rgba(27, 42, 74, 0.92) 0%, rgba(27, 42, 74, 0.70) 50%, rgba(27, 42, 74, 0.35) 100%),
+                      url(../img/ingenieros-edificio.jpg);
+    background-attachment: scroll;
+    background-position: center;
+}
+
+/* cada año de la trayectoria */
+.hito {
+    border-top: 4px solid #E8A838;
+    background-color: #F4F7FB;
+    border-radius: 8px;
+    padding: 20px 15px;
+    height: 100%;
+}
+
+.anio {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #8A5A00;
+    margin: 0;
+}
+
+.hito h3 {
+    color: #1B2A4A;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 6px 0;
+}
+
+.hito p {
+    font-size: 14px;
+}

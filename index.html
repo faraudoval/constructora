@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora S.R.L. | Inicio</title>
+    <!-- icono de la pestaña -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Tipografias de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark barra-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="logo-c">C</span>
+                <span class="logo-texto">CONSTRUCTORA S.R.L.</span>
+            </a>
+            <!-- menu hamburguesa (se ve en celular) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="obras.html">Obras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-amarillo btn-sm px-3" href="contacto.html">Solicitar presupuesto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PORTADA -->
+    <header class="hero hero-fija">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Construimos el futuro<br>con solidez y compromiso</h1>
+                    <p class="hero-texto">Más de 40 años de experiencia en obras civiles, edificaciones e infraestructura en toda la región de Cuyo.</p>
+                    <a href="obras.html" class="btn btn-amarillo me-3 mb-2">Conocer nuestros proyectos</a>
+                    <a href="contacto.html" class="btn btn-outline-light btn-hero mb-2">Contactarnos</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- DATOS CONSTRUCTORA -->
+    <section class="numeros">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-6 col-md-3 numero-item">
+                    <h2>+40</h2>
+                    <p>Años de experiencia</p>
+                </div>
+                <div class="col-6 col-md-3 numero-item">
+                    <h2>300+</h2>
+                    <p>Obras realizadas</p>
+                </div>
+                <div class="col-6 col-md-3 numero-item">
+                    <h2>50.000 m²</h2>
+                    <p>Metros construidos</p>
+                </div>
+                <div class="col-6 col-md-3 numero-item">
+                    <h2>15</h2>
+                    <p>Profesionales en el equipo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--NOSOTROS -->
+    <section id="nosotros" class="seccion bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <p class="subtitulo">SOBRE NOSOTROS</p>
+                    <h2 class="titulo">Trayectoria y compromiso<br>en cada proyecto</h2>
+                    <p class="texto-oscuro">Somos una empresa constructora con más de cuatro décadas de trayectoria en la provincia de San Juan y la región de Cuyo. Nos especializamos en obras civiles, edificaciones residenciales e industriales, y proyectos de infraestructura pública y privada.</p>
+                    <p class="texto-gris">Nuestro equipo trabaja con altos estándares de calidad, cumpliendo plazos y presupuestos con responsabilidad.</p>
+                    <a href="nosotros.html" class="btn btn-borde">Conocer más sobre nosotros</a>
+                </div>
+                <div class="col-lg-7">
+                    <img src="img/nosotros.jpg" class="img-fluid img-redonda" alt="Profesionales revisando planos de obra">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="seccion fondo-celeste">
+        <div class="container">
+            <p class="subtitulo text-center">NUESTROS SERVICIOS</p>
+            <h2 class="titulo text-center mb-5">Soluciones constructivas integrales</h2>
+
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card tarjeta-servicio h-100">
+                        <div class="card-body">
+                            <div class="icono"><i class="bi bi-building-fill"></i></div>
+                            <h3>Obras civiles</h3>
+                            <p>Construcción de edificios residenciales, comerciales e industriales. Desde los cimientos hasta la entrega final con los más altos estándares.</p>
+                            <a href="servicios.html#civiles" class="link-amarillo">Más información →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card tarjeta-servicio h-100">
+                        <div class="card-body">
+                            <div class="icono"><i class="bi bi-lightning-fill"></i></div>
+                            <h3>Instalaciones eléctricas</h3>
+                            <p>Proyectos de media y baja tensión para plantas industriales, edificios y viviendas. Tableros, cableado estructurado y puesta a tierra.</p>
+                            <a href="servicios.html#electricas" class="link-amarillo">Más información →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card tarjeta-servicio h-100">
+                        <div class="card-body">
+                            <div class="icono"><i class="bi bi-clipboard2-data-fill"></i></div>
+                            <h3>Proyecto y dirección</h3>
+                            <p>Elaboración de proyectos ejecutivos, cómputo y presupuesto, y dirección técnica de obra. Documentación completa para licitaciones.</p>
+                            <a href="servicios.html#proyecto" class="link-amarillo">Más información →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card tarjeta-servicio h-100">
+                        <div class="card-body">
+                            <div class="icono"><i class="bi bi-wrench-adjustable"></i></div>
+                            <h3>Alquiler de maquinaria</h3>
+                            <p>Disponemos de grúas hidráulicas, retroexcavadoras, camiones volcadores y equipos de compactación para obras de cualquier envergadura.</p>
+                            <a href="servicios.html#maquinaria" class="link-amarillo">Más información →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBRAS -->
+    <section id="obras" class="seccion fondo-celeste pt-0">
+        <div class="container">
+            <p class="subtitulo text-center">PORTFOLIO</p>
+            <h2 class="titulo text-center mb-5">Obras que hablan por nosotros</h2>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tarjeta-obra h-100">
+                        <img src="img/edificio-mirador.jpg" class="card-img-top" alt="Complejo residencial Mirador del Sol">
+                        <div class="card-body">
+                            <h3>Complejo residencial<br>Mirador del Sol</h3>
+                            <p><i class="bi bi-geo-alt"></i> Rivadavia, San Juan</p>
+                            <a href="obras.html#mirador" class="link-amarillo">Ver proyecto →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tarjeta-obra h-100">
+                        <img src="img/planta-industrial.jpg" class="card-img-top" alt="Planta industrial Zona Norte">
+                        <div class="card-body">
+                            <h3>Planta industrial<br>Zona Norte</h3>
+                            <p><i class="bi bi-geo-alt"></i> Chimbas, San Juan</p>
+                            <a href="obras.html#planta" class="link-amarillo">Ver proyecto →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tarjeta-obra h-100">
+                        <img src="img/ruta40.jpg" class="card-img-top" alt="Pavimentación Ruta Provincial 40">
+                        <div class="card-body">
+                            <h3>Pavimentación<br>Ruta Provincial 40</h3>
+                            <p><i class="bi bi-geo-alt"></i> Calingasta, San Juan</p>
+                            <a href="obras.html#ruta" class="link-amarillo">Ver proyecto →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="obras.html" class="btn btn-borde btn-sm px-4">Ver todas las obras</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="seccion bg-white">
+        <div class="container">
+            <p class="subtitulo text-center">TESTIMONIOS</p>
+            <h2 class="titulo text-center mb-5">Lo que dicen nuestros clientes</h2>
+
+            <div id="carruselClientes" class="carousel slide carrusel testimonios" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselClientes" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carruselClientes" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carruselClientes" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active">
+                        <i class="bi bi-quote comillas"></i>
+                        <p class="cita">Entregaron las dos torres en el plazo pactado y con muy buenas terminaciones. La comunicación con la dirección de obra fue permanente.</p>
+                        <p class="cliente">Laura Quiroga</p>
+                        <p class="empresa">Desarrollos Mirador S.A.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <i class="bi bi-quote comillas"></i>
+                        <p class="cita">Necesitábamos ampliar la planta sin frenar la producción. Organizaron la obra por etapas y la subestación quedó funcionando en el primer intento.</p>
+                        <p class="cliente">Ing. Martín Ochoa</p>
+                        <p class="empresa">Gerente de planta, Zona Norte</p>
+                    </div>
+                    <div class="carousel-item">
+                        <i class="bi bi-quote comillas"></i>
+                        <p class="cita">Un equipo serio, con maquinaria propia y personal capacitado. La repavimentación se hizo respetando el cronograma y las normas de seguridad vial.</p>
+                        <p class="cliente">Dirección Provincial de Vialidad</p>
+                        <p class="empresa">Inspección de obra, Calingasta</p>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselClientes" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselClientes" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presupuesto -->
+    <section class="banda-cta">
+        <div class="container text-center">
+            <h2>¿Tiene un proyecto en mente?</h2>
+            <p>Contáctenos y le enviamos un presupuesto sin cargo.</p>
+            <a href="contacto.html" class="btn btn-amarillo">Solicitar presupuesto</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="logo-c logo-chico">C</span>
+                        <span class="logo-texto">CONSTRUCTORA S.R.L.</span>
+                    </div>
+                    <p>Empresa constructora con más de 40 años de experiencia en San Juan y la región de Cuyo.</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <h4>Navegación</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="obras.html">Obras</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mb-4">
+                    <h4>Contacto</h4>
+                    <ul class="list-unstyled">
+                        <li>Av. Libertador San Martín 1234</li>
+                        <li>San Juan, Argentina</li>
+                        <li>(264) 421-0000</li>
+                        <li>info@constructora.com.ar</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4>Redes sociales</h4>
+                    <a href="#" class="red"><span class="icono-red"><i class="bi bi-instagram"></i></span> constructora_srl_ig</a>
+                    <a href="#" class="red"><span class="icono-red"><i class="bi bi-linkedin"></i></span> Constructora S.R.L.</a>
+                    <a href="#" class="red"><span class="icono-red"><i class="bi bi-facebook"></i></span> constructora_srl</a>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center copy">© 2026 Constructora S.R.L. — Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

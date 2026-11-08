@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora S.R.L. | Contacto</title>
+    <!-- icono de la pestaña -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Tipografias de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark barra-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="logo-c">C</span>
+                <span class="logo-texto">CONSTRUCTORA S.R.L.</span>
+            </a>
+            <!-- menu hamburguesa (se ve en celular) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="obras.html">Obras</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-amarillo btn-sm px-3" href="contacto.html">Solicitar presupuesto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TITULO DE LA PAGINA -->
+    <header class="hero hero-chico hero-fija hero-contacto">
+        <div class="container position-relative">
+            <p class="subtitulo text-white-50">CONTACTO</p>
+            <h1>Hablemos de su proyecto</h1>
+            <p class="hero-texto">Respondemos todas las consultas dentro de las 48 horas hábiles.</p>
+        </div>
+    </header>
+
+    <!-- FORMULARIO -->
+    <section id="contacto" class="seccion fondo-celeste">
+        <div class="container">
+            <p class="subtitulo text-center">ESCRÍBANOS</p>
+            <h2 class="titulo text-center">Solicite su presupuesto sin cargo</h2>
+            <p class="text-center mb-5">Complete el formulario y nos pondremos en contacto con usted a la brevedad.</p>
+
+            <div class="row g-4 justify-content-center">
+                <!-- formulario -->
+                <div class="col-lg-6">
+                    <form class="formulario">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Juan Pérez" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" placeholder="(264) 555-0000">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="departamento" class="form-label">Departamento</label>
+                                <select class="form-select" id="departamento">
+                                    <option selected>Capital</option>
+                                    <option>Rawson</option>
+                                    <option>Rivadavia</option>
+                                    <option>Chimbas</option>
+                                    <option>Santa Lucía</option>
+                                    <option>Pocito</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <p class="form-label">Tipo de obra</p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tipo" id="tipo1" checked>
+                                <label class="form-check-label" for="tipo1">Construcción nueva</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tipo" id="tipo2">
+                                <label class="form-check-label" for="tipo2">Ampliación</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tipo" id="tipo3">
+                                <label class="form-check-label" for="tipo3">Instalación eléctrica</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Describa brevemente su proyecto..."></textarea>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="acepto">
+                            <label class="form-check-label" for="acepto">Acepto ser contactado por teléfono o correo</label>
+                        </div>
+                        <!-- el boton abre el modal de confirmacion -->
+                        <button type="button" class="btn btn-amarillo" data-bs-toggle="modal" data-bs-target="#modalEnviado">Enviar consulta</button>
+                    </form>
+                </div>
+
+                <!-- datos de contacto -->
+                <div class="col-lg-4">
+                    <div class="datos-contacto h-100">
+                        <h3>Datos de contacto</h3>
+                        <p class="dato-titulo"><i class="bi bi-geo-alt"></i> Dirección</p>
+                        <p class="dato">Av. Libertador San Martín 1234<br><span>San Juan, Argentina</span></p>
+                        <p class="dato-titulo"><i class="bi bi-telephone"></i> Teléfono</p>
+                        <p class="dato">(264) 421-0000</p>
+                        <p class="dato-titulo"><i class="bi bi-whatsapp"></i> WhatsApp</p>
+                        <p class="dato">+54 9 264 555-0101</p>
+                        <p class="dato-titulo"><i class="bi bi-envelope"></i> Email</p>
+                        <p class="dato">info@constructora.com.ar</p>
+                        <p class="dato-titulo"><i class="bi bi-clock"></i> Horario de atención</p>
+                        <p class="dato">Lunes a Viernes, 8:00 a 17:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="seccion bg-white">
+        <div class="container">
+            <p class="subtitulo text-center">UBICACIÓN</p>
+            <h2 class="titulo text-center mb-5">Visítenos en nuestras oficinas</h2>
+            <div class="mapa">
+                <iframe src="https://maps.google.com/maps?q=Av.%20Libertador%20General%20San%20Mart%C3%ADn%201234%2C%20San%20Juan%2C%20Argentina&z=15&output=embed" title="Mapa de la oficina" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="seccion fondo-celeste">
+        <div class="container">
+            <p class="subtitulo text-center">PREGUNTAS FRECUENTES</p>
+            <h2 class="titulo text-center mb-5">Antes de escribirnos</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion acordeon" id="preguntas">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pregunta1">¿El presupuesto tiene costo?</button>
+                            </h2>
+                            <div id="pregunta1" class="accordion-collapse collapse show" data-bs-parent="#preguntas">
+                                <div class="accordion-body">No. La visita al terreno y el presupuesto son sin cargo dentro del Gran San Juan.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pregunta2">¿Trabajan fuera de la provincia?</button>
+                            </h2>
+                            <div id="pregunta2" class="accordion-collapse collapse" data-bs-parent="#preguntas">
+                                <div class="accordion-body">Sí, hacemos obras en toda la región de Cuyo: San Juan, Mendoza y San Luis.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pregunta3">¿Se encargan de los trámites municipales?</button>
+                            </h2>
+                            <div id="pregunta3" class="accordion-collapse collapse" data-bs-parent="#preguntas">
+                                <div class="accordion-body">Sí. Hacemos la aprobación de planos, el permiso de obra y el final de obra en el municipio.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="logo-c logo-chico">C</span>
+                        <span class="logo-texto">CONSTRUCTORA S.R.L.</span>
+                    </div>
+                    <p>Empresa constructora con más de 40 años de experiencia en San Juan y la región de Cuyo.</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <h4>Navegación</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="obras.html">Obras</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mb-4">
+                    <h4>Contacto</h4>
+                    <ul class="list-unstyled">
+                        <li>Av. Libertador San Martín 1234</li>
+                        <li>San Juan, Argentina</li>
+                        <li>(264) 421-0000</li>
+                        <li>info@constructora.com.ar</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4>Redes sociales</h4>
+                    <a href="#" class="red"><span class="icono-red"><i class="bi bi-instagram"></i></span> constructora_srl_ig</a>
+                    <a href="#" class="red"><span class="icono-red"><i class="bi bi-linkedin"></i></span> Constructora S.R.L.</a>
+                    <a href="#" class="red"><span class="icono-red"><i class="bi bi-facebook"></i></span> constructora_srl</a>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center copy">© 2026 Constructora S.R.L. — Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- MODAL: CONSULTA ENVIADA -->
+    <div class="modal fade" id="modalEnviado" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-5">
+                    <i class="bi bi-check-circle-fill icono-ok"></i>
+                    <h2 class="titulo mt-3">¡Consulta enviada!</h2>
+                    <p class="texto-gris">Gracias por escribirnos. Le vamos a responder dentro de las 48 horas hábiles.</p>
+                    <button type="button" class="btn btn-amarillo" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

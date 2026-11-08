@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora S.R.L. | Servicios</title>
+    <!-- icono de la pestaña -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Tipografias de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark barra-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="logo-c">C</span>
+                <span class="logo-texto">CONSTRUCTORA S.R.L.</span>
+            </a>
+            <!-- menu hamburguesa (se ve en celular) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="obras.html">Obras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-amarillo btn-sm px-3" href="contacto.html">Solicitar presupuesto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TITULO DE LA PAGINA -->
+    <header class="hero hero-chico hero-fija">
+        <div class="container position-relative">
+            <p class="subtitulo text-white-50">QUÉ HACEMOS</p>
+            <h1>Nuestros servicios</h1>
+            <p class="hero-texto">Acompañamos cada proyecto desde el primer plano hasta la entrega de llaves.</p>
+        </div>
+    </header>
+
+    <!-- OBRAS CIVILES -->
+    <section id="civiles" class="seccion bg-white">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <img src="img/ingeniero-obra.jpg" class="img-servicio" alt="Ingeniero frente a un edificio en construcción">
+                </div>
+                <div class="col-lg-6">
+                    <div class="icono icono-izq"><i class="bi bi-building-fill"></i></div>
+                    <h2 class="titulo">Obras civiles</h2>
+                    <p class="texto-oscuro">Construimos viviendas, edificios en altura, locales comerciales y naves industriales. Trabajamos con estructuras de hormigón armado pensadas para la zona sísmica de San Juan.</p>
+                    <ul class="list-unstyled lista-check">
+                        <li><i class="bi bi-check2-circle"></i> Fundaciones y estructuras sismorresistentes</li>
+                        <li><i class="bi bi-check2-circle"></i> Mampostería, revoques y terminaciones</li>
+                        <li><i class="bi bi-check2-circle"></i> Ampliaciones y remodelaciones</li>
+                        <li><i class="bi bi-check2-circle"></i> Obras llave en mano</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTALACIONES ELECTRICAS -->
+    <section id="electricas" class="seccion fondo-celeste">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="img/planta-industrial.jpg" class="img-servicio" alt="Planta industrial con paneles solares">
+                </div>
+                <div class="col-lg-6">
+                    <div class="icono icono-izq"><i class="bi bi-lightning-fill"></i></div>
+                    <h2 class="titulo">Instalaciones eléctricas</h2>
+                    <p class="texto-oscuro">Hacemos instalaciones de baja y media tensión para industrias, comercios y viviendas, con materiales normalizados y certificación final.</p>
+                    <ul class="list-unstyled lista-check">
+                        <li><i class="bi bi-check2-circle"></i> Subestaciones transformadoras hasta 13,2 kV</li>
+                        <li><i class="bi bi-check2-circle"></i> Tableros generales y seccionales</li>
+                        <li><i class="bi bi-check2-circle"></i> Puesta a tierra y protección contra descargas</li>
+                        <li><i class="bi bi-check2-circle"></i> Paneles solares conectados a red</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTO Y DIRECCION -->
+    <section id="proyecto" class="seccion bg-white">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <img src="img/planos-obra.jpg" class="img-servicio" alt="Ingenieros revisando los planos en una obra">
+                </div>
+                <div class="col-lg-6">
+                    <div class="icono icono-izq"><i class="bi bi-clipboard2-data-fill"></i></div>
+                    <h2 class="titulo">Proyecto y dirección de obra</h2>
+                    <p class="texto-oscuro">Nuestros ingenieros y arquitectos preparan toda la documentación técnica y controlan la obra para que se respeten los costos, los plazos y las normas.</p>
+                    <ul class="list-unstyled lista-check">
+                        <li><i class="bi bi-check2-circle"></i> Anteproyecto y proyecto ejecutivo</li>
+                        <li><i class="bi bi-check2-circle"></i> Cómputo métrico y presupuesto</li>
+                        <li><i class="bi bi-check2-circle"></i> Cálculo estructural</li>
+                        <li><i class="bi bi-check2-circle"></i> Dirección técnica y certificaciones</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO TRABAJAMOS -->
+    <section class="seccion fondo-azul">
+        <div class="container">
+            <p class="subtitulo text-center text-white-50">CÓMO TRABAJAMOS</p>
+            <h2 class="titulo text-center text-white mb-5">Un proceso claro en cuatro etapas</h2>
+            <div class="row g-4 text-center">
+                <div class="col-6 col-lg-3">
+                    <div class="paso">
+                        <span class="paso-num">1</span>
+                        <i class="bi bi-chat-dots"></i>
+                        <h3>Consulta</h3>
+                        <p>Escuchamos su necesidad y visitamos el terreno sin cargo.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="paso">
+                        <span class="paso-num">2</span>
+                        <i class="bi bi-rulers"></i>
+                        <h3>Proyecto</h3>
+                        <p>Hacemos los planos, el cómputo y un presupuesto detallado.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="paso">
+                        <span class="paso-num">3</span>
+                        <i class="bi bi-cone-striped"></i>
+                        <h3>Ejecución</h3>
+                        <p>Construimos con informes de avance todas las semanas.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="paso">
+                        <span class="paso-num">4</span>
+                        <i class="bi bi-key"></i>
+                        <h3>Entrega</h3>
+                        <p>Entregamos la obra con planos conforme a obra y garantía.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALQUILER DE MAQUINARIA -->
+    <section id="maquinaria" class="seccion fondo-celeste">
+        <div class="container">
+            <p class="subtitulo text-center">ALQUILER DE MAQUINARIA</p>
+            <h2 class="titulo text-center">Equipos propios, con operador</h2>
+            <p class="text-center mb-5">Todas las máquinas se alquilan por jornada o por mes, con mantenimiento y seguro incluidos.</p>
+
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card tarjeta-servicio maquina h-100">
+                        <div class="card-body">
+                            <div class="icono"><i class="bi bi-arrow-up-square"></i></div>
+                            <h3>Grúa hidráulica</h3>
+                            <ul class="list-unstyled">
+                                <li><strong>Capacidad:</strong> 25 t</li>
+                                <li><strong>Altura de pluma:</strong> 31 m</li>
+                                <li><strong>Operador:</strong> incluido</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card tarjeta-servicio maquina h-100">
+                        <div class="card-body">
+                            <div class="icono"><i class="bi bi-minecart-loaded"></i></div>
+                            <h3>Retroexcavadora</h3>
+                            <ul class="list-unstyled">
+                                <li><strong>Excavación:</strong> hasta 5,8 m</li>
+                                <li><strong>Balde:</strong> 1 m³</li>
+                                <li><strong>Alquiler mínimo:</strong> media jornada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card tarjeta-servicio maquina h-100">
+                        <div class="card-body">
+                            <div class="icono"><i class="bi bi-truck"></i></div>
+                            <h3>Camión volcador</h3>
+                            <ul class="list-unstyled">
+                                <li><strong>Caja:</strong> 12 m³</li>
+                                <li><strong>Carga útil:</strong> 18 t</li>
+                                <li><strong>Chofer:</strong> incluido</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card tarjeta-servicio maquina h-100">
+                        <div class="card-body">
+                            <div class="icono"><i class="bi bi-cone-striped"></i></div>
+                            <h3>Rodillo compactador</h3>
+                            <ul class="list-unstyled">
+                                <li><strong>Peso:</strong> 10 t</li>
+                                <li><strong>Ancho de tambor:</strong> 2,1 m</li>
+                                <li><strong>Uso:</strong> calles y rutas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presupuesto -->
+    <section class="banda-cta">
+        <div class="container text-center">
+            <h2>¿Qué servicio necesita?</h2>
+            <p>Cuéntenos su proyecto y armamos una propuesta a medida.</p>
+            <a href="contacto.html" class="btn btn-amarillo">Solicitar presupuesto</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="logo-c logo-chico">C</span>
+                        <span class="logo-texto">CONSTRUCTORA S.R.L.</span>
+                    </div>
+                    <p>Empresa constructora con más de 40 años de experiencia en San Juan y la región de Cuyo.</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <h4>Navegación</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="obras.html">Obras</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mb-4">
+                    <h4>Contacto</h4>
+                    <ul class="list-unstyled">
+                        <li>Av. Libertador San Martín 1234</li>
+                        <li>San Juan, Argentina</li>
+                        <li>(264) 421-0000</li>
+                        <li>info@constructora.com.ar</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4>Redes sociales</h4>
+                    <a href="#" class="red"><span class="icono-red"><i class="bi bi-instagram"></i></span> constructora_srl_ig</a>
+                    <a href="#" class="red"><span class="icono-red"><i class="bi bi-linkedin"></i></span> Constructora S.R.L.</a>
+                    <a href="#" class="red"><span class="icono-red"><i class="bi bi-facebook"></i></span> constructora_srl</a>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center copy">© 2026 Constructora S.R.L. — Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
